@@ -4,3 +4,7 @@ Gemfile.lock
 *.swo
 
 .env
+
+client_secrets.json
+
+.byebug_history
