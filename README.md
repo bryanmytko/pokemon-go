@@ -3,6 +3,8 @@
 I'd rather be programming, but I still wanna catch'em all.
 Seeing if it's possible to automate the entire game.
 
+__ NOTE: This project is temporarily halted while I work on porting [gpsoauth](https://github.com/simon-weber/gpsoauth) to Ruby, which is necessary to continue.__
+
 #### Installation
 
     Bundle install
