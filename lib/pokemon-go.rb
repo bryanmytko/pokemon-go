@@ -2,11 +2,6 @@ require "./lib/pokemon.pb.rb"
 require 'google/api_client/client_secrets'
 require "google/apis/games_management_v1management"
 
-require 'google/api_client'
-require 'google/api_client/client_secrets'
-require 'google/api_client/auth/file_storage'
-require 'google/api_client/auth/installed_app'
-
 # @TODO dev
 require 'byebug'
 
@@ -21,10 +16,6 @@ APP = 'com.nianticlabs.pokemongo'
 CLIENT_SIG = '321187995bc7cdc2b5fc91b11a96e2baa8602c62'
 
 def google_login
-  # CLIENT_SECRETS = Google::APIClient::ClientSecrets.load
-  # authorization = CLIENT_SECRETS.to_authorization
-
-  # Google::Apis::GamesManagementV1management.new
 end
 
 google_login
