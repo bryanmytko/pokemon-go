@@ -16,11 +16,16 @@ APP = 'com.nianticlabs.pokemongo'
 CLIENT_SIG = '321187995bc7cdc2b5fc91b11a96e2baa8602c62'
 
 def google_login(email, password)
-  g = Gpsoauth::Connection.new(ANDROID_ID)
+  g = Gpsoauth::Client.new(ANDROID_ID)
   response = g.master_login(email, password)
   oauth = g.oauth(email, response["Token"], SERVICE, APP, CLIENT_SIG)
 
   oauth["Auth"]
+end
+
+def test_api
+  debugger
+  RequestEnvelop.new
 end
 
 print "Email: "
@@ -30,3 +35,5 @@ print "Password: "
 password = STDIN.noecho(&:gets)
 
 puts "\nYour OAuth token for using Pokemon Go is: #{google_login(email, password)}"
+
+test_api
